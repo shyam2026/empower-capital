@@ -1,20 +1,16 @@
-import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import type { ReactNode } from "react";
 
-export const metadata = {
-  title: 'Empower Capital - Startup Growth Partner',
-  description: 'Your one-stop solution for startup registration, GST, trademark, incubation, and funding support.',
-}
-
-export default function RootLayout({ children }) {
+export default function RootLayout({children,}: {children: ReactNode;}) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <Header />
         {children}
         <Footer />
       </body>
     </html>
-  )
+  );
 }
