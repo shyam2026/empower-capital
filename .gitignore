@@ -4,8 +4,8 @@
 .pnp.js
 
 # Next.js
-# /.next/
-# /out/
+ /.next/
+ /out/
 
 # Production
 /build
