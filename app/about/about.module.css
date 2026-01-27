@@ -1,0 +1,282 @@
+/* About Hero */
+.aboutHero {
+  padding: 10rem 0 5rem;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: var(--white);
+  text-align: center;
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Mission & Vision */
+.missionVision {
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.mvGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.mvCard {
+  background: var(--secondary);
+  padding: 3rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.mvCard:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mvIcon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.mvIcon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--white);
+}
+
+.mvCard h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.mvCard p {
+  color: var(--text-light);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Story Section */
+.story {
+  padding: 5rem 0;
+}
+
+.storyContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.storyImage {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.storyImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.storyImage:hover img {
+  transform: scale(1.05);
+}
+
+.storyText h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.storyText p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+/* Values Section */
+.values {
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.valueCard {
+  background: var(--secondary);
+  padding: 2.5rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.valueIcon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.valueCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.valueCard p {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* Team Section */
+.team {
+  padding: 5rem 0;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.teamCard {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-10px);
+}
+
+.teamImage {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.teamImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.teamCard:hover .teamImage img {
+  transform: scale(1.1);
+}
+
+.teamCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.teamRole {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.teamBio {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.cta {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: var(--white);
+  text-align: center;
+}
+
+.ctaContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutHero {
+    padding: 8rem 0 4rem;
+  }
+  
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+  
+  .heroContent p {
+    font-size: 1.1rem;
+  }
+  
+  .mvGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .storyContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .storyImage {
+    order: -1;
+  }
+  
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaContent h2 {
+    font-size: 2rem;
+  }
+}

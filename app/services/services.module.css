@@ -1,0 +1,453 @@
+/* Services Hero */
+.servicesHero {
+  padding: 10rem 0 5rem;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: var(--white);
+  text-align: center;
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Main Services */
+.mainServices {
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.serviceDetail {
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.serviceDetail:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.serviceContent {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.reverse .serviceContent {
+  direction: rtl;
+}
+
+.reverse .serviceText {
+  direction: ltr;
+}
+
+.serviceIcon {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.serviceIcon svg {
+  width: 60px;
+  height: 60px;
+  color: var(--white);
+}
+
+.serviceText h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.serviceText > p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.serviceFeatures {
+  background: var(--secondary);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.serviceFeatures h4 {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.serviceFeatures ul {
+  list-style: none;
+  padding: 0;
+}
+
+.serviceFeatures li {
+  padding: 0.7rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.serviceFeatures li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.serviceTypes,
+.serviceBenefits,
+.protectionTypes,
+.incubationPrograms,
+.fundingStages {
+  margin-top: 2rem;
+}
+
+.serviceTypes h4,
+.serviceBenefits h4,
+.protectionTypes h4,
+.incubationPrograms h4,
+.fundingStages h4 {
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.typeGrid,
+.benefitGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.typeCard,
+.benefitCard {
+  background: var(--white);
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.typeCard:hover,
+.benefitCard:hover {
+  background: var(--primary);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+.protectionGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.protectionCard {
+  background: var(--secondary);
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.protectionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.protectionCard span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.protectionCard p {
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.programGrid,
+.stageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.programCard,
+.stageCard {
+  background: var(--secondary);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.programCard:hover,
+.stageCard:hover {
+  border-color: var(--primary);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.programCard h5,
+.stageCard h5 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.programCard p,
+.stageCard p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 5rem 0;
+  background: var(--secondary);
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pricingCard {
+  background: var(--white);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.pricingCard:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.pricingCard.featured {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: var(--white);
+  transform: scale(1.05);
+  border-color: var(--accent);
+}
+
+.pricingCard.featured:hover {
+  transform: scale(1.08) translateY(-10px);
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: var(--white);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.pricingCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.pricingCard.featured h3 {
+  color: var(--white);
+}
+
+.price {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.currency {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.amount {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--primary);
+}
+
+.pricingCard.featured .amount {
+  color: var(--white);
+}
+
+.pricingDesc {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.pricingCard.featured .pricingDesc {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pricingFeatures {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.pricingFeatures li {
+  padding: 0.8rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--secondary);
+}
+
+.pricingCard.featured .pricingFeatures li {
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.pricingFeatures li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.pricingCard.featured .pricingFeatures li::before {
+  color: var(--accent);
+}
+
+/* CTA Section */
+.cta {
+  padding: 5rem 0;
+  background: var(--white);
+  text-align: center;
+}
+
+.ctaContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .protectionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .pricingGrid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  
+  .pricingCard.featured {
+    transform: scale(1);
+  }
+  
+  .pricingCard.featured:hover {
+    transform: translateY(-10px) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesHero {
+    padding: 8rem 0 4rem;
+  }
+  
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+  
+  .heroContent p {
+    font-size: 1.1rem;
+  }
+  
+  .serviceContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .reverse .serviceContent {
+    direction: ltr;
+  }
+  
+  .serviceIcon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .serviceIcon svg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .serviceText h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .typeGrid,
+  .benefitGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .protectionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .programGrid,
+  .stageGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaContent h2 {
+    font-size: 2rem;
+  }
+}

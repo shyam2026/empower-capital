@@ -1,0 +1,156 @@
+.footer {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: var(--white);
+  padding: 4rem 0 1rem;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerSection h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.logoIcon {
+  width: 50px;
+  height: 50px;
+  color: var(--white);
+}
+
+.footerLogo h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.tagline {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  margin-top: 0.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.description {
+  opacity: 0.9;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+}
+
+.linkList li {
+  margin-bottom: 0.8rem;
+}
+
+.linkList a {
+  color: var(--white);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.linkList a:hover {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+}
+
+.contactList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  opacity: 0.9;
+}
+
+.contactList svg {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin-top: 0.2rem;
+}
+
+.contactList a {
+  color: var(--white);
+  transition: opacity 0.3s ease;
+}
+
+.contactList a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footerBottom p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.footerLinks a {
+  color: var(--white);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footerLinks a:hover {
+  opacity: 1;
+}
+
+.footerLinks span {
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footerLinks {
+    width: 100%;
+    justify-content: center;
+  }
+}
