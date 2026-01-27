@@ -8,10 +8,7 @@ const nextConfig = {
       },
     ],
   },
-  // Ensure proper routing
-  trailingSlash: false,
-  // Add output configuration for Vercel
-  output: 'standalone',
 }
 
 export default nextConfig
+
