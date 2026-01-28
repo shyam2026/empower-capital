@@ -22,9 +22,12 @@ export default function Header() {
         <div className={styles.headerContent}>
           <Link href="/" className={styles.logo}>
             <div className={styles.logoIcon}>
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 10 L70 30 L60 30 L60 50 L80 50 L80 40 L90 50 L80 60 L80 50 L60 50 L60 70 L70 70 L50 90 L30 70 L40 70 L40 50 L20 50 L20 60 L10 50 L20 40 L20 50 L40 50 L40 30 L30 30 Z" fill="currentColor"/>
-              </svg>
+              <img 
+                src="/images/logo-icon.png" 
+                alt="Empower Capital Logo" 
+                width={42} 
+                height={42} 
+              />
             </div>
             <div className={styles.logoText}>
               <span className={styles.companyName}>EMPOWER CAPITAL</span>
@@ -33,10 +36,23 @@ export default function Header() {
           </Link>
 
           <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
-            <Link href="/" className={styles.navLink}>Home</Link>
-            <Link href="/about" className={styles.navLink}>About</Link>
-            <Link href="/services" className={styles.navLink}>Services</Link>
-            <Link href="/contact" className={styles.navLink}>Contact Us</Link>
+            
+           {/* ❌ CLOSE BUTTON – MOBILE ONLY */}
+              {isMobileMenuOpen && (
+                <button
+                  className={styles.closeBtn}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  aria-label="Close menu"
+                >
+                  ✕
+                </button>
+              )}
+
+            
+            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={styles.navLink}>Home</Link>
+            <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className={styles.navLink}>About</Link>
+            <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className={styles.navLink}>Services</Link>
+            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className={styles.navLink}>Contact Us</Link>
           </nav>
 
           <button 

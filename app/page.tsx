@@ -1,4 +1,5 @@
 import Link from 'next/link'
+
 import styles from './page.module.css'
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
                 Empowering Your <span className="text-accent">Startup Journey</span>
               </h1>
               <p className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-                From registration to funding, we provide comprehensive support to transform your startup vision into reality. Your growth partner at every milestone.
+                From Registration to Funding, we provide comprehensive support to transform your startup vision into reality. Your Growth Partner at every milestone.
               </p>
               <div className={styles.heroCta} style={{animationDelay: '0.4s'}}>
                 <Link href="/contact" className="btn btn-primary">
@@ -42,11 +43,11 @@ export default function Home() {
         <div className="container">
           <div className={styles.statsGrid}>
             <div className={styles.statCard}>
-              <h3>500+</h3>
+              <h3>50+</h3>
               <p>Startups Registered</p>
             </div>
             <div className={styles.statCard}>
-              <h3>₹50Cr+</h3>
+              <h3>₹10Cr+</h3>
               <p>Funding Secured</p>
             </div>
             <div className={styles.statCard}>
@@ -77,7 +78,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Company Registration</h3>
-              <p>Complete assistance in registering your Private Limited, LLP, or Partnership firm with all legal compliances.</p>
+              <p>Complete assistance in registering your Private Limited, LLP, Partnership Firm or any other business entity with all legal compliances.</p>
               <ul className={styles.features}>
                 <li>Name Approval</li>
                 <li>Document Preparation</li>

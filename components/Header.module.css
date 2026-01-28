@@ -1,18 +1,21 @@
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0.2rem;
+  left: 0.5rem;
+  right: 0.5rem;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #083d42;
+  background: #f5fafa;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  padding: 1rem 0;
+  padding: .5rem 0;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .header.scrolled {
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
-  padding: 0.7rem 0;
+  padding: 0.4rem 0.15rem;
 }
 
 .headerContent {
@@ -68,9 +71,11 @@
 
 .nav {
   display: flex;
+  flex-direction: row;        /* desktop layout */
   gap: 2.5rem;
   align-items: center;
 }
+
 
 .navLink {
   color: var(--text-dark);
@@ -118,14 +123,23 @@
   transition: all 0.3s ease;
 }
 
+
 @media (max-width: 768px) {
   .logo {
     gap: 0.7rem;
+
+  .nav {
+    flex-direction: column; /* mobile layout */
+    align-items: flex-start;
+    gap: 20px;
+
+    }
   }
   
   .logoIcon {
     width: 40px;
     height: 40px;
+    object-fit: contain;
   }
   
   .companyName {
@@ -146,22 +160,59 @@
     right: -100%;
     width: 70%;
     height: 100vh;
-    background: var(--white);
+    background: #eef7f8;
+    border: 1px solid #0b4c52;
+    
+
+    max-height: calc(100vh - 120px); /* top & bottom limit */
+    overflow-y: auto;                /* scroll inside panel */
+    z-index: 100;
+
+    border-radius: 16px;
     flex-direction: column;
     padding: 6rem 2rem 2rem;
-    gap: 2rem;
+    gap: 1rem;
     box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
     transition: right 0.4s ease;
     align-items: flex-start;
   }
   
   .nav.mobileMenuOpen {
     right: 0;
+    top: 0.2rem;
+    bottom: 10rem;
+    width: 40%;
   }
   
   .navLink {
     font-size: 1.2rem;
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
   }
+
+/* Close button - hidden by default (desktop) */
+.closeBtn {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .closeBtn {
+    display: block; /* show only on mobile */
+    align-self: flex-end;
+    color: #0d5c63;
+    background-color: #eef7f8;
+  }
+}
+
+
 }

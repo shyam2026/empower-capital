@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import styles from './about.module.css'
 
+const HIDE_SECTION = false;  {/* Set to true to unhide the hidden Section */}
+
 export default function About() {
   return (
     <main>
@@ -61,7 +63,7 @@ export default function About() {
                 Empower Capital was founded in 2020 by a team of entrepreneurs who experienced firsthand the challenges of starting a business in India. We noticed that brilliant minds with groundbreaking ideas often struggled with the administrative and regulatory complexities that come with launching a startup.
               </p>
               <p>
-                What started as a small consulting firm has grown into a comprehensive startup support ecosystem. We've helped over 500 startups navigate the intricate process of company formation, compliance, and growth. Our team combines deep expertise in legal, financial, and business development domains to provide holistic support.
+                What started as a small consulting firm has grown into a comprehensive startup support ecosystem. We've helped over 50+ startups navigate the intricate process of company formation, compliance, and growth. Our team combines deep expertise in legal, financial, and business development domains to provide holistic support.
               </p>
               <p>
                 Today, we're proud to be the trusted partner for startups across India, from solo founders with an idea on a napkin to growing companies seeking their next round of funding. Our success is measured not in revenue, but in the number of successful businesses we've helped launch and scale.
@@ -119,6 +121,11 @@ export default function About() {
         </div>
       </section>
 
+  {/* this hide_section and this <section>  for hiding  also a </section> )} below*/}
+  
+  {HIDE_SECTION && (     
+    <section>
+
       {/* Team Section */}
       <section className={styles.team}>
         <div className="container">
@@ -132,14 +139,15 @@ export default function About() {
               <div className={styles.teamImage}>
                 <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Team member" />
               </div>
-              <h3>Rajesh Kumar</h3>
+              <h3>Deepak Gogal</h3>
               <p className={styles.teamRole}>Founder & CEO</p>
-              <p className={styles.teamBio}>15+ years in startup consulting and venture capital</p>
+              <p className={styles.teamBio}>5+ years in startup consulting and venture capital</p>
             </div>
 
             <div className={styles.teamCard}>
               <div className={styles.teamImage}>
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Team member" />
+                   {/*  "/images/hero.png"  insted of link*/}
               </div>
               <h3>Priya Sharma</h3>
               <p className={styles.teamRole}>Head of Legal</p>
@@ -165,7 +173,10 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> 
+
+    </section>
+  )}
 
       {/* CTA Section */}
       <section className={styles.cta}>

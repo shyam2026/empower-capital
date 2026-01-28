@@ -15,12 +15,12 @@ export default function Terms() {
           <div className={styles.content}>
             <h2>1. Agreement to Terms</h2>
             <p>
-              By accessing and using Empower Capital's website and services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the terms of this agreement, you are not authorized to use or access our services.
+              By accessing and using Empower Capital's website, you accept and agree to the terms and conditions.
             </p>
 
             <h2>2. Services</h2>
             <p>
-              Empower Capital provides startup support services including but not limited to company registration, GST registration, trademark registration, incubation support, and funding assistance. The specific terms and conditions for each service will be detailed in separate service agreements.
+              Empower Capital provides startup support services including but not limited to Company Registration, GST Registration, Trademark Registration, Incubation Support, and Funding Assistance. The specific Terms and Conditions for each service will be detailed in separate service agreements.
             </p>
 
             <h2>3. User Responsibilities</h2>
@@ -46,7 +46,7 @@ export default function Terms() {
 
             <h2>6. Intellectual Property</h2>
             <p>
-              All content on our website, including text, graphics, logos, images, and software, is the property of Empower Capital or its content suppliers and is protected by Indian and international copyright laws. You may not reproduce, distribute, or create derivative works without our express written permission.
+              All content on our website, including text, graphics, logos, images, and software, is the property of 'Empower Capital' or its content suppliers and is protected by Indian and international copyright laws. You may not reproduce, distribute, or create derivative works without our express written permission.
             </p>
 
             <h2>7. Confidentiality</h2>
@@ -73,12 +73,12 @@ export default function Terms() {
 
             <h2>10. Dispute Resolution</h2>
             <p>
-              Any disputes arising out of or relating to these Terms or our services shall be resolved through good faith negotiations. If negotiations fail, disputes shall be resolved through arbitration in Mumbai, India, in accordance with the Arbitration and Conciliation Act, 1996.
+              Any disputes arising out of or relating to these Terms or our Services shall be resolved through good faith negotiations. If negotiations fail, disputes shall be resolved through arbitration in Noida, UP, in accordance with the Arbitration and Conciliation Act, 1996.
             </p>
 
             <h2>11. Governing Law</h2>
             <p>
-              These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. The courts of Mumbai, India shall have exclusive jurisdiction over any disputes.
+              These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. The courts of Noida, UP, shall have exclusive jurisdiction over any disputes.
             </p>
 
             <h2>12. Termination</h2>
@@ -101,9 +101,9 @@ export default function Terms() {
               If you have any questions about these Terms, please contact us:
             </p>
             <ul>
-              <li>Email: legal@empowercapital.com</li>
-              <li>Phone: +91 98765 43210</li>
-              <li>Address: 123 Business Tower, Mumbai, Maharashtra 400001, India</li>
+              <li>Email: info@empowercapital.co.in</li>
+              <li>Phone: +91 7042478224</li>
+              <li>Address: Sector 63, Noida, Uttar Pradesh 201309</li>
             </ul>
           </div>
         </div>

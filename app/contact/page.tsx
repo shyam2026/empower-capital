@@ -74,7 +74,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <h3>Address</h3>
-                <p>123 Business Tower<br/>Mumbai, Maharashtra<br/>400001, India</p>
+                <p>C Block, Sector 63<br/>Noida, Uttar Pradesh<br/>201309</p>
               </div>
 
               <div className={styles.infoCard}>
@@ -84,8 +84,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <h3>Email</h3>
-                <p><a href="mailto:info@empowercapital.com">info@empowercapital.com</a></p>
-                <p><a href="mailto:support@empowercapital.com">support@empowercapital.com</a></p>
+                <p><a href="mailto:info@empowercapital.co.in">info@empowercapital.co.in</a></p>
+                {/*  <p><a href="mailto:support@empowercapital.com">support@empowercapital.com</a></p>   */}
               </div>
 
               <div className={styles.infoCard}>
@@ -95,8 +95,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <h3>Contact No.</h3>
-                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
-                <p><a href="tel:+919876543211">+91 98765 43211</a></p>
+                <p><a href="tel:+917042478224">+91 70424 78224</a></p>
+                {/*   <p><a href="tel:+919876543211">+91 98765 43211</a></p> */}
               </div>
 
               <div className={styles.infoCard}>
@@ -107,7 +107,7 @@ export default function Contact() {
                 </div>
                 <h3>Response Time</h3>
                 <p>Within 24 hours</p>
-                <p className={styles.highlight}>We respond to all inquiries within one business day</p>
+                {/*    <p className={styles.highlight}>We respond to all inquiries within one business day</p>   */}
               </div>
             </div>
 
@@ -230,13 +230,13 @@ export default function Contact() {
         <div className="container">
           <div className={styles.mapContainer}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160991355!2d72.71637344415673!3d19.08219783808013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1709123456789!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d707.1082568135436!2d77.38184001394448!3d28.61831384587088!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1769599365088!5m2!1sen!2sin"
               width="100%"
               height="450"
-              style={{ border: 0 }}
+              style={{ border: 0, maxHeight: '300px' , minWidth: '600px'}}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade" 
             ></iframe>
           </div>
         </div>

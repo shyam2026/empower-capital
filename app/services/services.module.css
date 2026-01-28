@@ -311,6 +311,17 @@
   color: var(--primary);
 }
 
+.tnc {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.pricingCard.featured .tnc {
+  color: var(--white);
+}
+
 .pricingCard.featured .amount {
   color: var(--white);
 }

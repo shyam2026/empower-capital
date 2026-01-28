@@ -261,6 +261,7 @@ export default function Services() {
               <div className={styles.price}>
                 <span className={styles.currency}>₹</span>
                 <span className={styles.amount}>9,999</span>
+                <span className={styles.tnc}>*</span>
               </div>
               <p className={styles.pricingDesc}>Perfect for solo founders just starting out</p>
               <ul className={styles.pricingFeatures}>
@@ -280,6 +281,7 @@ export default function Services() {
               <div className={styles.price}>
                 <span className={styles.currency}>₹</span>
                 <span className={styles.amount}>24,999</span>
+                <span className={styles.tnc}>*</span>
               </div>
               <p className={styles.pricingDesc}>For startups ready to scale quickly</p>
               <ul className={styles.pricingFeatures}>
@@ -299,6 +301,7 @@ export default function Services() {
               <div className={styles.price}>
                 <span className={styles.currency}>₹</span>
                 <span className={styles.amount}>49,999</span>
+                <span className={styles.tnc}>*</span>
               </div>
               <p className={styles.pricingDesc}>Complete support for ambitious startups</p>
               <ul className={styles.pricingFeatures}>
@@ -327,7 +330,7 @@ export default function Services() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> 
     </main>
   )
 }

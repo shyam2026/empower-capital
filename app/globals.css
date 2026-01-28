@@ -19,6 +19,32 @@
   --shadow-lg: 0 20px 60px rgba(13, 92, 99, 0.15);
 }
 
+
+/* Width of the scrollbar added by me*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #cdfbff; /* light background */
+}
+
+/* Handle (the moving part) */
+::-webkit-scrollbar-thumb {
+  background-color: #0d5c63; /* your brand color */
+  border-radius: 10px;
+  border: 2px solid #f1f5f9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0d5c57;
+
+}    
+
+/* scroll bar till here */
+
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--text-dark);
@@ -224,4 +250,5 @@ section {
   .container {
     padding: 0 1.5rem;
   }
+
 }

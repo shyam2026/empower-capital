@@ -131,7 +131,7 @@
 }
 
 .footerLinks a:hover {
-  opacity: 1;
+  opacity: 10;
 }
 
 .footerLinks span {
@@ -147,6 +147,9 @@
   .footerBottom {
     flex-direction: column;
     text-align: center;
+    
+    width: 100%;
+    justify-content: center;
   }
   
   .footerLinks {
