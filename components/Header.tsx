@@ -25,12 +25,12 @@ export default function Header() {
               <img 
                 src="/images/logo-icon.png" 
                 alt="Empower Capital Logo" 
-                width={42} 
-                height={42} 
+                width={44} 
+                height={44} 
               />
             </div>
             <div className={styles.logoText}>
-              <span className={styles.companyName}>EMPOWER CAPITAL</span>
+              <span className={styles.companyName}>EMPOWER CAPITAL</span> 
               <span className={styles.tagline}>Startup Growth Partner</span>
             </div>
           </Link>

@@ -44,8 +44,8 @@
 }
 
 .scrolled .logoIcon {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 
 .logoText {
@@ -54,17 +54,17 @@
 }
 
 .companyName {
-  font-size: 1.3rem;
-  font-weight: 800;
+  font-size: 1.9rem;
+  font-weight: 700;
   color: var(--text-dark);
   letter-spacing: -0.5px;
   line-height: 1;
 }
 
 .tagline {
-  font-size: 0.75rem;
+  font-size: 0.80rem;
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.5px;
   margin-top: 0.2rem;
 }
@@ -143,11 +143,11 @@
   }
   
   .companyName {
-    font-size: 1.1rem;
+    font-size: 1.29rem;
   }
   
   .tagline {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
   }
   
   .mobileMenuBtn {
