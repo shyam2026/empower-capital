@@ -176,7 +176,7 @@ export default function About() {
       </section> 
 
     </section>
-  )}
+  )}     {/* Hide section section */}
 
       {/* CTA Section */}
       <section className={styles.cta}>
