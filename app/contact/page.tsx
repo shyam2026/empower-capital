@@ -1,7 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import emailjs from "@emailjs/browser";
 import styles from './contact.module.css'
+import Link from 'next/link'
+
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,35 +20,57 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState('')
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitStatus('success')
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        service: '',
-        message: ''
-      })
-      
-      setTimeout(() => {
-        setSubmitStatus('')
-      }, 5000)
-    }, 1500)
-  }
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+          setFormData({
+          ...formData,
+         [e.target.name]: e.target.value
+        })
+   }
+
+        const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault()
+      setIsSubmitting(true)
+      setSubmitStatus('')
+
+      try {
+        await emailjs.send(
+          "service_zuti75i",       // ✅ your SERVICE ID
+          "template_bol9kwx",        // 🔴 add your TEMPLATE ID
+          {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            company: formData.company,
+            service: formData.service,
+            message: formData.message,
+          },
+          "S3FiuHnepUQww1kOa"           // 🔴 add your PUBLIC KEY
+        )
+
+        setSubmitStatus('success')
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          service: '',
+          message: ''
+        })
+      } catch (error) {
+        console.error(error)
+        alert("Failed to send message. Please try again.")
+      } finally {
+        setIsSubmitting(false)
+
+        setTimeout(() => {
+          setSubmitStatus('')
+        }, 5000)
+      }
+    }
+
+
+
 
   return (
     <main>
